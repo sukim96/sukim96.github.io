@@ -35,7 +35,7 @@ jobs:
           path: site/dev
 
       - name: Clean internal files
-        run: rm -rf site/.git site/.github site/dev/.git site/dev/.github
+        run: rm -rf site/.git site/.github site/.claude site/dev/.git site/dev/.github site/dev/.claude
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
