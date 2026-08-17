@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Su Kim</title>
+  <meta name="description" content="Su Kim의 소개 페이지" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+  />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #e8eaed;
+      --muted: #9aa3b2;
+      --accent: #60a5fa;
+      --border: #262b35;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --text: #1c1e21;
+        --muted: #5c6370;
+        --accent: #2563eb;
+        --border: #e5e7eb;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      line-height: 1.7;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin-bottom: 1.25rem;
+      border: 2px solid var(--border);
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    .tagline { color: var(--accent); font-weight: 600; margin-bottom: 1rem; }
+    .bio { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.75rem; }
+    .links { display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; }
+    .links a {
+      display: inline-block;
+      padding: 0.55rem 1.2rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+    .links a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+    footer { margin-top: 2rem; color: var(--muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="avatar" src="https://github.com/sukim96.png" alt="프로필 사진" />
+    <h1>Su Kim</h1>
+    <p class="tagline">한 줄 소개를 여기에 적어 보세요</p>
+    <p class="bio">
+      안녕하세요! 여기에 짧은 자기소개를 적습니다.
+      무엇을 하는 사람인지, 어떤 것에 관심이 있는지 두세 문장이면 충분합니다.
+    </p>
+    <div class="links">
+      <a href="https://github.com/sukim96" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:snupiagentclaude@gmail.com">Email</a>
+    </div>
+    <footer>© 2026 Su Kim</footer>
+  </main>
+</body>
+</html>
